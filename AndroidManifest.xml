@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.id.timohare.myfirstapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="au.id.timohare.myfirstapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="au.id.timohare.myfirstapp.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="au.id.timohare.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.id.timohare.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="au.id.timohare.myfirstapp.SensorActivity"
+            android:label="@string/title_activity_sensor"
+            android:parentActivityName="au.id.timohare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.id.timohare.MainActivity" />
+        </activity>
+        <activity
+            android:name="au.id.timohare.myfirstapp.AccelActivity"
+            android:label="@string/title_activity_accel"
+            android:parentActivityName="au.id.timohare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="au.id.timohare.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
